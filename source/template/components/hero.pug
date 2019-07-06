@@ -1,0 +1,204 @@
+mixin hero
+  section.hero
+    .container-fluid
+      .row
+        .col-12.hero__popup
+          .d-flex
+            .hero__search-region
+              ul.hero__search-region-list.d-flex.flex-wrap
+                li.hero__search-region-item.linear-bg
+                  .hero__search-region-item-img(style="background-image:url('assets/img/contents/bali.jpg');")
+                  a(href="#").text-center
+                    p.text-uppercase Nice
+                li.hero__search-region-item.linear-bg
+                  .hero__search-region-item-img(style="background-image:url('assets/img/contents/nice.jpg');")
+                  a(href="#").text-center
+                    p.text-uppercase Moncao
+                li.hero__search-region-item.linear-bg
+                  .hero__search-region-item-img(style="background-image:url('assets/img/contents/nice.jpg');")
+                  a(href="#").text-center
+                    p.text-uppercase St.Tropez
+                li.hero__search-region-item.linear-bg
+                  .hero__search-region-item-img(style="background-image:url('assets/img/contents/bali.jpg');")
+                  a(href="#").text-center
+                    p.text-uppercase Cannes
+                li.hero__search-region-item.linear-bg
+                  .hero__search-region-item-img(style="background-image:url('assets/img/contents/nice.jpg');")
+                  a(href="#").text-center
+                    p.text-uppercase Antibes
+                li.hero__search-region-item.linear-bg
+                  .hero__search-region-item-img(style="background-image:url('assets/img/contents/nice.jpg');")
+                  a(href="#").text-center
+                    p.text-uppercase Valbonne
+                li.hero__search-region-item.linear-bg
+                  .hero__search-region-item-img(style="background-image:url('assets/img/contents/nice.jpg');")
+                  a(href="#").text-center
+                    p.text-uppercase 
+                      | Saint - Jean
+                      br
+                      | Cap - Ferrat
+            .hero__search-filter-option
+              ul.hero__search-filter-option-list
+                li.hero__search-filter-option-item
+                  label
+                    input(type="checkbox" checked)
+                    .hero__search-filter-option-item-fake
+                    .hero__search-filter-option-item-text
+                      p Option 1
+            .hero__search-option
+              form
+                .hero__search-option-type.type
+                  .hero__search-option-type-title.hero__search-option-title
+                    p Property Type
+                  .hero__search-option-type-col.type__col.d-flex
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="heroHouseType" checked)
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_vill
+                            .type__icon-text
+                              p Villas
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="heroHouseType")
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_app
+                            .type__icon-text
+                              p Apartments
+                .hero__search-option-location
+                  .hero__search-option-location-title.hero__search-option-title
+                    p Location
+                  .hero__search-option-location-input
+                    .hero__search-option-location-input-fake
+                      p Select location
+                .hero__search-option-type.type
+                  .hero__search-option-type-title.hero__search-option-title
+                    p Looking for
+                  .hero__search-option-type-col.type__col.d-flex
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="heroRentType" checked)
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_rent
+                            .type__icon-text
+                              p Rent
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="heroRentType")
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_buy
+                            .type__icon-text
+                              p Buy
+                .hero__search-option-filter
+                  .hero__search-option-filter-link
+                    a(href="#").d-flex.align-items-center.justify-content-center
+                      .hero__search-option-filter-icon
+                      .hero__search-option-filter-text
+                        p More filtering options
+                .hero__search-option-btn
+                  button.d-flex.align-items-center.justify-content-center
+                    .hero__search-option-btn-icon
+                    .hero__search-option-btn-text
+                      p Search
+        .col-6.hero__col-left
+          .hero__region
+            .hero__region-wrapp.hero__region-wrapp_monaco
+              a(href="#").hero__region-link
+                .hero__region-img
+                  svg
+                    use(xlink:href=`assets/img/icons/symbol/sprite.svg#monaco`)
+                .hero__region-icon
+                  div
+                    p Monaco
+                    i
+            .hero__region-wrapp.hero__region-wrapp_nice
+              a(href="#").hero__region-link
+                .hero__region-img
+                  svg
+                    use(xlink:href=`assets/img/icons/symbol/sprite.svg#nice`)
+                .hero__region-icon
+                  div
+                    p Nice
+                    i
+            .hero__region-wrapp.hero__region-wrapp_ferrat
+              a(href="#").hero__region-link
+                .hero__region-img
+                  svg
+                    use(xlink:href=`assets/img/icons/symbol/sprite.svg#ferrat`)
+                .hero__region-icon
+                  div
+                    p Saint-Jean-Cap-Ferrat
+                    i
+            .hero__region-wrapp.hero__region-wrapp_vallbone
+              a(href="#").hero__region-link
+                .hero__region-img
+                  svg
+                    use(xlink:href=`assets/img/icons/symbol/sprite.svg#vallbone`)
+                .hero__region-icon
+                  div
+                    p Valbonne
+                    i
+            .hero__region-wrapp.hero__region-wrapp_antibes
+              a(href="#").hero__region-link
+                .hero__region-img
+                  svg
+                    use(xlink:href=`assets/img/icons/symbol/sprite.svg#antibes`)
+                .hero__region-icon
+                  div
+                    p Antibes
+                    i
+            .hero__region-wrapp.hero__region-wrapp_cannes
+              a(href="#").hero__region-link
+                .hero__region-img
+                  svg
+                    use(xlink:href=`assets/img/icons/symbol/sprite.svg#cannes`)
+                .hero__region-icon
+                  div
+                    p Cannes
+                    i
+            .hero__region-wrapp.hero__region-wrapp_tropez
+              a(href="#").hero__region-link
+                .hero__region-img
+                  svg
+                    use(xlink:href=`assets/img/icons/symbol/sprite.svg#tropez`)
+                .hero__region-icon
+                  div
+                    p Saint Tropez
+                    i
+        .col-6.hero__col-right
+          .hero__logo
+            a(href="#")
+              img(src="assets/img/logo/hero-logo.svg", alt="Logo")
+          .hero__desc
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .hero__search
+            .hero__search-btn
+              button.d-flex.align-items-center
+                p Search your destination 
+                p →
+          .hero__counter.d-flex
+            .hero__counter-item.text-center
+              .hero__counter-nmbr
+                p 9
+              .hero__counter-title.text-uppercase
+                p APARTMENTS
+            .hero__counter-item.text-center
+              .hero__counter-nmbr
+                p 12
+              .hero__counter-title.text-uppercase
+                p VILLAS
+            .hero__counter-item.text-center
+              .hero__counter-nmbr
+                p 7
+              .hero__counter-title.text-uppercase
+                p ZONES
+            .hero__counter-item.text-center
+              .hero__counter-nmbr
+                p 150
+              .hero__counter-title.text-uppercase
+                p CLIENTS
+              

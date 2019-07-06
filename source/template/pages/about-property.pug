@@ -1,0 +1,414 @@
+extends ../main-layout
+
+block variables
+  - 
+    var title = "About Property";
+
+block content
+  include ../components/header
+  +header('property')
+  main.main(role="main")
+    section.property-hero(style=" background-image: url('assets/img/backgrounds/about_bg.jpg') ")
+      .container-fluid
+        .row
+          .col-12
+            .property-hero__save
+              .location__save
+                a(href="#")
+            .property-hero__price
+              .location__price
+                p Starts from   
+                p   
+                  span.price__start   7000€  
+                  span - 
+                  span.price__end 15.000€ 
+                  |  / week
+            .property-hero__target.text-uppercase
+              a(href="#") all photos
+    section.property-head.property
+      .container-fluid
+        .row
+          .col-12
+            .property-head__wrapp
+              .property-head__title.text-uppercase.text-center
+                h1 
+                  | - 
+                  span NICE 
+                  | - 
+                h2 Canoubier Bay
+              .property-head__commodities
+                ul.property-head__commodities-list.d-flex
+                  li.property-head__commodities-item
+                    .property-head__commodities-item-icon.property-head__commodities-item-icon_bed
+                    .property-head__commodities-item-text
+                      p 12 
+                      p beds
+                  li.property-head__commodities-item
+                    .property-head__commodities-item-icon.property-head__commodities-item-icon_bath
+                    .property-head__commodities-item-text
+                      p 4
+                      p baths
+                  li.property-head__commodities-item
+                    .property-head__commodities-item-icon.property-head__commodities-item-icon_sqm
+                    .property-head__commodities-item-text
+                      p 30.000 
+                      p sqm
+                  li.property-head__commodities-item
+                    .property-head__commodities-item-icon.property-head__commodities-item-icon_pool
+                    .property-head__commodities-item-text
+                      p 1 
+                      p pool
+                  li.property-head__commodities-item
+                    .property-head__commodities-item-icon.property-head__commodities-item-icon_guests
+                    .property-head__commodities-item-text
+                      p 20 
+                      p  guests
+    section.property-gallery.property
+      .container-fluid
+        .row.property-gallery__row_align
+          .col-2
+            .property-gallery__title.text-uppercase.property-title
+              p gallery
+          .col-10
+            .property-gallery__tab
+              .list-group.list-group-horizontal#list-tab-gallery(role="tablist")
+                a(class="list-group-item list-group-item-action active text-uppercase" id="list-all-list" data-toggle="list" href="#list-all" role="tab" aria-controls="all") all
+                a(class="list-group-item list-group-item-action text-uppercase" id="list-livingroom-list" data-toggle="list" href="#list-livingroom" role="tab" aria-controls="livingroom") LIVINGROOM
+                a(class="list-group-item list-group-item-action text-uppercase" id="list-bedroom-list" data-toggle="list" href="#list-bedroom" role="tab" aria-controls="bedroom") bedroom
+                a(class="list-group-item list-group-item-action text-uppercase" id="list-bathroom-list" data-toggle="list" href="#list-bathroom" role="tab" aria-controls="bathroom") bathroom
+                a(class="list-group-item list-group-item-action text-uppercase" id="list-kitchen-list" data-toggle="list" href="#list-kitchen" role="tab" aria-controls="kitchen") kitchen
+                a(class="list-group-item list-group-item-action text-uppercase" id="list-garden-list" data-toggle="list" href="#list-garden" role="tab" aria-controls="garden") garden
+                a(class="list-group-item list-group-item-action text-uppercase" id="list-basement-list" data-toggle="list" href="#list-basement" role="tab" aria-controls="basement") basement
+        .row
+          .col-12
+            .property-gallery__content
+              .tab-content#nav-gallery-tabContent
+                .tab-pane.fade.show.active(id="list-all" role="tabpanel" aria-labelledby="list-all-list")
+                  .row
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/bali.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/nice.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/monaco.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-1.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-2.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-3.jpg", alt="Img")
+                .tab-pane.fade(id="list-livingroom" role="tabpanel" aria-labelledby="list-livingroom-list")
+                  .row
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/bali.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/nice.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/monaco.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-1.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-2.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-3.jpg", alt="Img")
+                .tab-pane.fade(id="list-bedroom" role="tabpanel" aria-labelledby="list-bedroom-list")
+                  .row
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/bali.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/nice.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/monaco.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-1.jpg", alt="Img")
+                .tab-pane.fade(id="list-bathroom" role="tabpanel" aria-labelledby="list-bathroom-list")
+                  .row
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/bali.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/nice.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/monaco.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-1.jpg", alt="Img")
+                .tab-pane.fade(id="list-kitchen" role="tabpanel" aria-labelledby="list-kitchen-list")
+                  .row
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/bali.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/nice.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/monaco.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/room-1.jpg", alt="Img")
+                .tab-pane.fade(id="list-garden" role="tabpanel" aria-labelledby="list-garden-list")
+                  .row
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/bali.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/nice.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/monaco.jpg", alt="Img")
+                .tab-pane.fade(id="list-basement" role="tabpanel" aria-labelledby="list-basement-list")
+                  .row
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/bali.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/nice.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/monaco.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/nice.jpg", alt="Img")
+                    .col-4.property__gallery-content-col
+                      .property-gallery__content-img
+                        img(src="assets/img/contents/monaco.jpg", alt="Img")
+        .row
+          .col-12
+            .property-gallery__btn.text-uppercase
+              button VIEW MORE + 
+    section.property-about.property
+      .container-fluid
+        .row.property-about__row
+          .col-12
+            .property-title.property-about__title.text-uppercase
+              p about
+          .col-12
+            .property-about__content
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec ac odio tempor orci dapibus ultrices in. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Justo laoreet sit amet cursus sit amet dictum. Duis convallis convallis tellus id. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Adipiscing elit duis tristique sollicitudin. Eu scelerisque felis imperdiet proin. Arcu ac tortor dignissim convallis aenean et tortor at risus. Elit eget gravida cum sociis natoque penatibus et. Laoreet non curabitur gravida arcu ac. Scelerisque eleifend donec pretium vulputate sapien nec. Egestas erat imperdiet sed euismod nisi porta lorem mollis.
+        .row.property-about__row
+          .col-12
+            .property-title.property-about__title.text-uppercase
+              p SLEEPING ARANGEMENTS
+          .col-12
+            .property-about__commodities
+              ul.property-about__commodities-list.d-flex
+                li.property-about__commodities-item
+                  .property-about__commodities-icon.property-about__commodities-icon_bed
+                  .property-about__commodities-text
+                    p 5
+                    p double beds
+                li.property-about__commodities-item
+                  .property-about__commodities-icon.property-about__commodities-icon_bed
+                  .property-about__commodities-text
+                    p 4
+                    p king size
+                li.property-about__commodities-item
+                  .property-about__commodities-icon.property-about__commodities-icon_bed
+                  .property-about__commodities-text
+                    p 3
+                    p single beds
+        .row.property-about__row
+          .col-12
+            .property-title.property-about__title.text-uppercase
+              p BATHROOM ARANGEMENTS
+          .col-12
+            .property-about__commodities
+              ul.property-about__commodities-list.d-flex
+                li.property-about__commodities-item
+                  .property-about__commodities-icon.property-about__commodities-icon_bath
+                  .property-about__commodities-text
+                    p 2
+                    p full baths
+                li.property-about__commodities-item
+                  .property-about__commodities-icon.property-about__commodities-icon_bath
+                  .property-about__commodities-text
+                    p 1
+                    p shower
+                li.property-about__commodities-item
+                  .property-about__commodities-icon.property-about__commodities-icon_bath
+                  .property-about__commodities-text
+                    p 1
+                    p outdoor shower
+        .row.property-about__row
+          .col-3
+            .property-title.property-about__title.text-uppercase
+              p AMENITIES
+          .col-9
+            .property-about__tab
+              .list-group.list-group-horizontal#list-tab(role="tablist")
+                a(class="list-group-item list-group-item-action active text-uppercase" id="about-all-list" data-toggle="list" href="#about-all" role="tab" aria-controls="all") all
+                a(class="list-group-item list-group-item-action text-uppercase" id="about-interior-list" data-toggle="list" href="#about-interior" role="tab" aria-controls="interior") interior
+                a(class="list-group-item list-group-item-action text-uppercase" id="about-exterior-list" data-toggle="list" href="#about-exterior" role="tab" aria-controls="exterior") exterior
+          .col-12
+            .property-about__tab-content
+              .tab-content#nav-tabContent
+                .tab-pane.fade.show.active(id="about-all" role="tabpanel" aria-labelledby="about-all-list")
+                  ul.property-about__tab-content-list
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p TV
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p Electric Gate
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p Air-conditioning
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_close
+                      .property-about__tab-content-text
+                        p Fireplace
+                .tab-pane.fade(id="about-interior" role="tabpanel" aria-labelledby="about-interior-list")
+                  ul.property-about__tab-content-list
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p TV
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p Electric Gate
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_close
+                      .property-about__tab-content-text
+                        p Fireplace
+                .tab-pane.fade(id="about-exterior" role="tabpanel" aria-labelledby="about-exterior-list")
+                  ul.property-about__tab-content-list
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p TV
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p TV2
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p Electric Gate
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_checked
+                      .property-about__tab-content-text
+                        p Air-conditioning
+                    li.property-about__tab-content-item
+                      .property-about__tab-content-icon.property-about__tab-content-icon_close
+                      .property-about__tab-content-text
+                        p Fireplace
+    section.property.property-map
+      .container-fluid
+        .row
+          .col-12
+            .property-title.property-map__title.text-uppercase
+              p location
+          .col-12
+            .property-map__wrapp
+              #map
+              .property-map__option
+                .property-map__option-head.text-uppercase
+                  p show:
+                .property-map__option-checkbox-wrapp
+                  .property-map__option-checkbox
+                    label
+                      input(type="checkbox")
+                      .property-map__option-checkbox-fake
+                      .property-map__option-checkbox-text
+                        p Restaurants
+                  .property-map__option-checkbox
+                    label
+                      input(type="checkbox" checked)
+                      .property-map__option-checkbox-fake
+                      .property-map__option-checkbox-text
+                        p Supermarkets
+                  .property-map__option-checkbox
+                    label
+                      input(type="checkbox")
+                      .property-map__option-checkbox-fake
+                      .property-map__option-checkbox-text
+                        p Beaches
+                  .property-map__option-checkbox
+                    label
+                      input(type="checkbox")
+                      .property-map__option-checkbox-fake
+                      .property-map__option-checkbox-text
+                        p Cafes
+                  .property-map__option-checkbox
+                    label
+                      input(type="checkbox")
+                      .property-map__option-checkbox-fake
+                      .property-map__option-checkbox-text
+                        p Shopping Centres
+                  .property-map__option-checkbox-more
+                    a(href="#") + More options
+  footer.footer.property-footer
+    .container-fluid
+      .row
+        .col-12
+          .property-footer__title.text-center
+            p
+              | We will get in touch with you
+              br
+              | within 1 business day.
+          form.property-footer__form
+            .form-row
+              .form-group.col-4
+                input(type="text" placeholder="Name")
+              .form-group.col-4
+                input(type="tel" placeholder="Phone number")
+              .form-group.col-4
+                input(type="email" placeholder="Email")
+            .form-row
+              .form-group.col-8
+                input(type="text" placeholder="Hi, I’m interested in Canourbier Bay")
+              .form-group.col-4
+                button(type="submit").text-uppercase submit
+  .property-popup
+    .property-popup__triger
+      a(href="#")
+    .property-popup__content-wrapp
+      .property-popup__content-close
+        a(href="#")
+          span
+          span
+      .property-popup__content
+        .property-footer__title.text-center
+          p
+            | We will get in touch with you
+            br
+            | within 1 business day.
+        form.property-footer__form
+          .form-row
+            .form-group.col-12
+              input(type="text" placeholder="Name")
+            .form-group.col-12
+              input(type="tel" placeholder="Phone number")
+            .form-group.col-12
+              input(type="email" placeholder="Email")
+          .form-row
+            .form-group.col-12
+              textarea(placeholder="Hi, I’m interested in Canourbier Bay")
+            .form-group.col-12
+              button(type="submit").text-uppercase submit
+

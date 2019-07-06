@@ -1,0 +1,327 @@
+extends ../main-layout
+
+block variables
+  - 
+    var title = "Home";
+
+block content
+  include ../components/header
+  +header('home')
+  include ../components/hero
+  +hero
+  main.main(role="main")
+    section.region
+      .container-fluid
+        .row
+          .col-12.region__col.d-flex.align-items-center
+            .region__img
+              img(src="assets/img/contents/nice.jpg", alt="Nice img")
+            .region__info
+              .region__text-cover.text-cover.text-uppercase
+                p nice
+              .region__title.title.text-uppercase
+                h2 NICE
+              .region__desc
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              .region__foter
+                .region__type.type.d-flex
+                  .region__type-col.type__col.d-flex
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="nicehouseType" checked)
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_vill
+                            .type__icon-text
+                              p Villas
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="nicehouseType")
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_app
+                            .type__icon-text
+                              p Apartments
+                  .region__type-col.region__type-col_margin.type__col.d-flex
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="nicerentType" checked)
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_rent
+                            .type__icon-text
+                              p Rent
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="nicerentType")
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_buy
+                            .type__icon-text
+                              p Buy
+                .region__price
+                  p
+                    | Price: 
+                    strong
+                      | from 
+                      span.price__start 7.000€ 
+                      | - 
+                      span.price__end 50.000€ 
+                      | / week
+                .region__link
+                  .link
+                    a(href="#") View more details →
+          .col-12.region__col.d-flex.align-items-center.justify-content-end
+            .region__info.region__info_right.text-right
+              .region__text-cover.text-cover.text-uppercase
+                p monaco
+              .region__title.title.text-uppercase
+                h2 monaco
+              .region__desc
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              .region__foter
+                .region__type.type.d-flex
+                  .region__type-col.type__col.d-flex
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="monacohouseType" checked)
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_vill
+                            .type__icon-text
+                              p Villas
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="monacohouseType")
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_app
+                            .type__icon-text
+                              p Apartments
+                  .region__type-col.region__type-col_margin.type__col.d-flex
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="monacorentType" checked)
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_rent
+                            .type__icon-text
+                              p Rent
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="monacorentType")
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_buy
+                            .type__icon-text
+                              p Buy
+                .region__price
+                  p
+                    | Price: 
+                    strong
+                      | from 
+                      span.price__start 7.000€ 
+                      | - 
+                      span.price__end 50.000€ 
+                      | / week
+                .region__link
+                  .link
+                    a(href="#") View more details →
+            .region__img.region__img_right
+              img(src="assets/img/contents/nice.jpg", alt="Nice img")
+          .col-12.region__col.d-flex.align-items-center
+            .region__img
+              img(src="assets/img/contents/nice.jpg", alt="Nice img")
+            .region__info
+              .region__text-cover.text-cover.text-uppercase
+                p ST:TROPEZ
+              .region__title.title.text-uppercase
+                h2 ST.TROPEZ
+              .region__desc
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              .region__foter
+                .region__type.type.d-flex
+                  .region__type-col.type__col.d-flex
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="tropezhouseType" checked)
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_vill
+                            .type__icon-text
+                              p Villas
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="tropezhouseType")
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_app
+                            .type__icon-text
+                              p Apartments
+                  .region__type-col.region__type-col_margin.type__col.d-flex
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="tropezrentType" checked)
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_rent
+                            .type__icon-text
+                              p Rent
+                    .type__item
+                      label.type__label
+                        input(type="radio", name="tropezrentType")
+                        .type__item-wrapp
+                          .type__icon-wrapp
+                            .type__icon.type__icon_buy
+                            .type__icon-text
+                              p Buy
+                .region__price
+                  p
+                    | Price: 
+                    strong
+                      | from 
+                      span.price__start 7.000€ 
+                      | - 
+                      span.price__end 50.000€ 
+                      | / week
+                .region__link
+                  .link
+                    a(href="#") View more details →
+    section.how
+      .container-fluid
+        .row
+          .col-12
+            .how__title
+              p How it works
+            .how__text-cover.text-cover.text-uppercase
+              p buy
+          .col-12
+            .how__list-tab.list-group.list-group-horizontal(role="tablist")#list-tab
+              a(href="#list-rent" id="list-rent-list" clas="list-group-item list-group-item-action text-uppercase" data-toggle="list" role="tab" aria-controls="rent").active rent
+              .how__list-tab-devider |
+              a(href="#list-buy" id="list-buy-list" clas="list-group-item list-group-item-action text-uppercase" data-toggle="list" role="tab" aria-controls="buy") buy
+          .col-12
+            .tab-content.how__tab-content#nav-tabContent
+              .tab-pane.fade.show.active#list-rent(role="tabpanel" aria-labelledby="list-rent-list")
+                .row
+                  .col-lg-6.col-12
+                    .how__step.text-center
+                      p 1 step
+                    .how__desc
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  .col-lg-6.col-12
+                    .how__step.text-center
+                      p 2 step
+                    .how__desc
+                      p Sed faucibus turpis in eu mi bibendum neque egestas congue. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Tristique risus nec feugiat in. Felis imperdiet proin fermentum leo vel. Dignissim convallis aenean et tortor at risus. Viverra suspendisse potenti nullam ac tortor vitae. Sed ullamcorper morbi tincidunt ornare massa. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Quisque egestas diam in arcu cursus euismod quis.
+              .tab-pane.fade.show#list-buy(role="tabpanel" aria-labelledby="list-buy-list")
+                .row
+                  .col-lg-6.col-12
+                    .how__step.text-center
+                      p 3 step
+                    .how__desc
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  .col-lg-6.col-12
+                    .how__step.text-center
+                      p 4 step
+                    .how__desc
+                      p Sed faucibus turpis in eu mi bibendum neque egestas congue. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Tristique risus nec feugiat in. Felis imperdiet proin fermentum leo vel. Dignissim convallis aenean et tortor at risus. Viverra suspendisse potenti nullam ac tortor vitae. Sed ullamcorper morbi tincidunt ornare massa. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Quisque egestas diam in arcu cursus euismod quis.
+    section.question
+      .container-fluid
+        .row.align-items-center
+          .col-6.question__col
+            .question__title
+              p Do you have any questions?
+            .question__desc
+              p Feel free, leave your number and we will come back with a call  
+          .col-6.question__col
+            form.d-flex
+              .question__phone
+                input(type="tel" id="phone" placeholder="Leave your number")
+              .question__btn
+                button.text-uppercase Order a call
+    section.testimonials
+      .container-fluid
+        .row
+          .col-6.testimonials__col
+            .testimonials__slider
+              .testimonials__slider-item
+                .testimonials__slider-item-author.text-uppercase
+                  p KANYE WEST
+                .testimonials__slider-item-text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .testimonials__slider-item-link
+                  .link
+                    a(href="#") View more details →
+              .testimonials__slider-item
+                .testimonials__slider-item-author.text-uppercase
+                  p KANYE WEST
+                .testimonials__slider-item-text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .testimonials__slider-item-link
+                  .link
+                    a(href="#") View more details →
+              .testimonials__slider-item
+                .testimonials__slider-item-author.text-uppercase
+                  p KANYE WEST
+                .testimonials__slider-item-text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .testimonials__slider-item-link
+                  .link
+                    a(href="#") View more details →
+              .testimonials__slider-item
+                .testimonials__slider-item-author.text-uppercase
+                  p KANYE WEST
+                .testimonials__slider-item-text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .testimonials__slider-item-link
+                  .link
+                    a(href="#") View more details →
+              .testimonials__slider-item
+                .testimonials__slider-item-author.text-uppercase
+                  p KANYE WEST
+                .testimonials__slider-item-text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .testimonials__slider-item-link
+                  .link
+                    a(href="#") View more details →
+              .testimonials__slider-item
+                .testimonials__slider-item-author.text-uppercase
+                  p KANYE WEST
+                .testimonials__slider-item-text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .testimonials__slider-item-link
+                  .link
+                    a(href="#") View more details →
+              .testimonials__slider-item
+                .testimonials__slider-item-author.text-uppercase
+                  p KANYE WEST
+                .testimonials__slider-item-text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .testimonials__slider-item-link
+                  .link
+                    a(href="#") View more details →
+              .testimonials__slider-item
+                .testimonials__slider-item-author.text-uppercase
+                  p KANYE WEST
+                .testimonials__slider-item-text
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                .testimonials__slider-item-link
+                  .link
+                    a(href="#") View more details →
+            .testimonials__slider-control
+              .testimonials__slider-dots
+              .testimonials__slider-arrows
+          .col-6.testimonials__col
+            .testimonials__right.text-right
+              .testimonials__right-title
+                h3 
+                  | What our clients
+                  br
+                  | say about us
+              .testimonials__right-footer
+                h4 Your feedback
+                p How do you rate our team and service?
+                a(href="#").text-uppercase add a review
+  include ../components/favorites-popup
+  +favorites

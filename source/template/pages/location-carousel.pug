@@ -1,0 +1,291 @@
+extends ../main-layout
+
+block variables
+  - 
+    var title = "Location Carousel";
+
+block content
+  include ../components/header
+  +header('location')
+  main.main(role="main")
+    section.location-head
+      .container-fluid
+        .row
+          .col-12.d-flex.align-items-center
+            .location-head__title
+              .location-head__text-cover.text-cover.text-uppercase
+                p nice
+              .location-head__title-text.title.text-uppercase
+                h2 NICE
+            .location-head__type.type.d-flex
+              .location-head__type-col.type__col.d-flex
+                .type__item
+                  label.type__label
+                    input(type="radio", name="nicehouseType" checked)
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon.type__icon_vill
+                        .type__icon-text
+                          p Villas
+                .type__item
+                  label.type__label
+                    input(type="radio", name="nicehouseType")
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon.type__icon_app
+                        .type__icon-text
+                          p Apartments
+              .location-head__type-col.location-head__type-col_margin.type__col.d-flex
+                .type__item
+                  label.type__label
+                    input(type="radio", name="nicerentType" checked)
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon.type__icon_rent
+                        .type__icon-text
+                          p Rent
+                .type__item
+                  label.type__label
+                    input(type="radio", name="nicerentType")
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon.type__icon_buy
+                        .type__icon-text
+                          p Buy
+              .location-head__type-col.type__col.ml-auto.d-flex
+                .type__item
+                  a(href="location-crousel.html").type__link.type__link_blocks
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon-text.text-center
+                          p
+                            | View
+                            br
+                            | carousel
+                .type__item
+                  a(href="locations.html").type__link.type__link_search
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon-text.text-center
+                          p
+                            | View all
+                            br
+                            | locations
+    section.location-carousel
+      .container-fluid
+        .row
+          .col-12.location-carousel__col
+            .location-carousel__left
+              .location-carousel__left-slider
+                .location-carousel__left-slider-item
+                  .location-carousel__left-slider-item-wrapp
+                    .location__save
+                      a(href="#")
+                    a(href="#").location-carousel__left-slider-item-link
+                      .location-carousel__left-head
+                        .location-carousel__img
+                          img(src="assets/img/contents/villa.jpg", alt="Image")
+                        .location__label
+                          .location__label-sale.text-uppercase
+                            p for sale
+                        .location__price
+                          p Starts from
+                          p
+                            span.price__start 7000€  
+                            span - 
+                            span.price__end 15.000€ 
+                            | / week
+                .location-carousel__left-slider-item
+                  .location-carousel__left-slider-item-wrapp
+                    .location__save
+                      a(href="#")
+                    a(href="#").location-carousel__left-slider-item-link
+                      .location-carousel__left-head
+                        .location-carousel__img
+                          img(src="assets/img/contents/villa.jpg", alt="Image")
+                        .location__label
+                          .location__label-sale.text-uppercase
+                            p for sale
+                        .location__price
+                          p Starts from
+                          p
+                            span.price__start 7000€  
+                            span - 
+                            span.price__end 15.000€ 
+                            | / week
+                .location-carousel__left-slider-item
+                  .location-carousel__left-slider-item-wrapp
+                    .location__save
+                      a(href="#")
+                    a(href="#").location-carousel__left-slider-item-link
+                      .location-carousel__left-head
+                        .location-carousel__img
+                          img(src="assets/img/contents/villa.jpg", alt="Image")
+                        .location__label
+                          .location__label-sale.text-uppercase
+                            p for sale
+                        .location__price
+                          p Starts from
+                          p
+                            span.price__start 7000€  
+                            span - 
+                            span.price__end 15.000€ 
+                            | / week
+              .location-carousel__left-control
+                .location-carousel__left-dots
+                .location-carousel__left-arrows
+            .location-carousel__right
+              .location-carousel__right-slider
+                .location-carousel__right-slider-item
+                  .location-carousel__right-slider-item-title
+                    h3 Canoubier Bay 1
+                  .location-carousel__right-slider-item-desc
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  .location-carousel__right-slider-item-info
+                    .location-carousel__right-slider-item-info-row.d-flex
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p Living Area
+                        .location-carousel__right-slider-item-info-item-content
+                          p 900 sqm
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p bedrooms
+                        .location-carousel__right-slider-item-info-item-content
+                          p 11
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p baths
+                        .location-carousel__right-slider-item-info-item-content
+                          p 04
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p guests
+                        .location-carousel__right-slider-item-info-item-content
+                          p 24
+                    .location-carousel__right-slider-item-info-row.d-flex
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p Plot of land
+                        .location-carousel__right-slider-item-info-item-content
+                          p 90.000 sqm
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p pool
+                        .location-carousel__right-slider-item-info-item-content
+                          p 01
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p spa
+                        .location-carousel__right-slider-item-info-item-content
+                          p 01
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p high security
+                        .location-carousel__right-slider-item-info-item-content
+                          p 24/7
+                  .location-carousel__right-slider-item-link
+                    .link
+                      a(href="#") View more details →
+                .location-carousel__right-slider-item
+                  .location-carousel__right-slider-item-title
+                    h3 Another text
+                  .location-carousel__right-slider-item-desc
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                  .location-carousel__right-slider-item-info
+                    .location-carousel__right-slider-item-info-row.d-flex
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p Living Area
+                        .location-carousel__right-slider-item-info-item-content
+                          p 500 sqm
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p bedrooms
+                        .location-carousel__right-slider-item-info-item-content
+                          p 6
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p baths
+                        .location-carousel__right-slider-item-info-item-content
+                          p 01
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p guests
+                        .location-carousel__right-slider-item-info-item-content
+                          p 13
+                    .location-carousel__right-slider-item-info-row.d-flex
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p Plot of land
+                        .location-carousel__right-slider-item-info-item-content
+                          p 90.000 sqm
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p pool
+                        .location-carousel__right-slider-item-info-item-content
+                          p 04
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p spa
+                        .location-carousel__right-slider-item-info-item-content
+                          p 09
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p high security
+                        .location-carousel__right-slider-item-info-item-content
+                          p 24/7
+                  .location-carousel__right-slider-item-link
+                    .link
+                      a(href="#") View more details →
+                .location-carousel__right-slider-item
+                  .location-carousel__right-slider-item-title
+                    h3 Canoubier Bay 3
+                  .location-carousel__right-slider-item-desc
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  .location-carousel__right-slider-item-info
+                    .location-carousel__right-slider-item-info-row.d-flex
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p Living Area
+                        .location-carousel__right-slider-item-info-item-content
+                          p 900 sqm
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p bedrooms
+                        .location-carousel__right-slider-item-info-item-content
+                          p 11
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p baths
+                        .location-carousel__right-slider-item-info-item-content
+                          p 04
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p guests
+                        .location-carousel__right-slider-item-info-item-content
+                          p 24
+                    .location-carousel__right-slider-item-info-row.d-flex
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p Plot of land
+                        .location-carousel__right-slider-item-info-item-content
+                          p 90.000 sqm
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p pool
+                        .location-carousel__right-slider-item-info-item-content
+                          p 01
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p spa
+                        .location-carousel__right-slider-item-info-item-content
+                          p 01
+                      .location-carousel__right-slider-item-info-item
+                        .location-carousel__right-slider-item-info-item-head.text-uppercase
+                          p high security
+                        .location-carousel__right-slider-item-info-item-content
+                          p 24/7
+                  .location-carousel__right-slider-item-link
+                    .link
+                      a(href="#") View more details →

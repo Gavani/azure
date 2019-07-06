@@ -1,0 +1,247 @@
+.team{
+  margin: 65px 0 100px 0;
+}
+.team__list{
+  margin-left: -2%;
+}
+.team__item{
+  width: 23%;
+  margin-left: 2%;
+  position: relative;
+  padding: 45px 45px 15px 45px;
+}
+.team__item_hover{
+  box-shadow: 0 4px 14px 0 rgba(#885F3C, .15);
+  background: #FCFAF7;
+}
+.team__wrapp{
+  cursor: pointer;
+  &:hover{
+    .team__about{
+      height: 177px;
+    }
+    .team__expand{
+      opacity: 1;
+    }
+  }
+}
+.team__avatar{
+  display: block;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -30px;
+  }
+}
+.team__avatar_obj-pos{
+  img{
+    object-position: 0 -100px;
+  }
+}
+// Transition Team
+.team__about{
+  height: 75px;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+}
+.team__about-name{
+  margin-bottom: 3px;
+  p{
+    @include mont(bold);
+    font-size: 24px;
+    color: #7A8AA7;
+  }
+}
+.team__about-position{
+  margin-bottom: 20px;
+  p{
+    @include mont(semibold);
+    font-size: 18px;
+    color: #7A8AA7;
+  }
+}
+.team__about-desc{
+  p{
+    @include mont(book);
+    font-size: 14px;
+    color: #7A8AA7;
+  }
+}
+.team__about-contact-links{
+  a{
+    @include mont(semibold);
+    font-size: 18px;
+    color: #59667C;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &:first-child{
+    a{
+      &:before{
+        font-family: "fontello";
+        content: '\e801'; 
+        font-size: 14px;
+        margin-right: 8px;
+      }
+    }
+  }
+  &:last-child{
+    margin-left: auto;
+    a{
+      &:before{
+        font-family: "fontello";
+        content: '\e805';
+        font-size: 14px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.team__expand{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  opacity: 0;
+  transition: .2s linear;
+  a{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #7A8AA7;
+    position: relative;
+    &:after,
+    &:before{
+      content: "";
+      display: block;
+      @include centered;
+      background: #ffffff;
+      border-radius: 10px;
+    }
+    &:after{
+      height: 18px;
+      width: 3px;
+    }
+    &:before{
+      height: 3px;
+      width: 18px;
+    }
+  }
+}
+
+.team__popup{
+  padding: 50px;
+  background: #ffffff;
+  position: absolute;
+  top: 175px;
+  margin-top: -150px;
+  left: 61px;
+  margin-left: 15px;
+  z-index: 99999;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(#885F3C, .15);
+  width: 60vw;
+  display: none;
+  transition: margin-top .3s ease-in;
+}
+.team__popup_visible{
+  transition: margin-top .3s ease-in;
+  margin-top: 0;
+}
+.team__popup-wrapp{
+  display: flex;
+  width: 100%;
+}
+.team__popup-avatar{
+  width: 345px;
+  img{
+    width: 100%;
+  }
+}
+.team__popup-about{
+  display: flex;
+  flex-direction: column;
+}
+.team__popup-about-name{
+  text-align: center;
+  p{
+    @include mont(bold);
+    font-size: 30px;
+    color: #7A8AA7;
+    line-height: 1;
+  }
+}
+.team__popup-about-position{
+  text-align: center;
+  margin-bottom: 30px;
+  p{
+    @include mont(semibold);
+    font-size: 20px;
+    color: #7A8AA7;
+  }
+}
+.team__popup-about{
+  flex: 1;
+  margin-left: 95px;
+  margin-right: 85px;
+}
+.team__popup-about-desc{
+  max-height: 335px;
+  overflow: hidden;
+}
+.team__popup-about-desc_bar{
+  max-height: 335px;
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+  box-sizing: content-box;
+  overflow-y: scroll;
+  p{
+    @include mont(bookIt);
+    font-size: 15px;
+    line-height: 20px;
+    color: #7A8AA7;
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.team__popup-about-contact{
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+.team__popup-close{
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  a{
+    width: 24px;
+    height: 1.375rem;
+    display: block;
+    position: relative;
+    span{
+      width: 24px;
+      height: 2px;
+      background: #7A8AA7;
+      display: block;
+      position: absolute;
+      &:last-child{
+        transform: rotate(-45deg);
+        top: 11px;
+      }
+      &:first-child{
+        transform: rotate(45deg);
+        top: 11px
+      }
+    }
+  }
+}
+

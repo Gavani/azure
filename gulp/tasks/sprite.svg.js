@@ -2,7 +2,7 @@
 
 module.exports = function() {
     $.gulp.task('svg', () => {
-        return $.gulp.src($.config.src +'/img/icons/*.svg')
+        return $.gulp.src($.config.src +'/svg/*.svg')
             .pipe($.gp.svgmin({
                 js2svg: {
                     pretty: true
@@ -10,9 +10,6 @@ module.exports = function() {
             }))
             .pipe($.gp.cheerio({
                 run: function($) {
-                    $('[fill]').removeAttr('fill');
-                    $('[stroke]').removeAttr('stroke');
-                    $('[style]').removeAttr('style');
                 },
                 parserOptions: { xmlMode: true }
             }))

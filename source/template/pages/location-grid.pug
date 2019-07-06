@@ -1,0 +1,328 @@
+extends ../main-layout
+
+block variables
+  - 
+    var title = "Location Grid";
+
+block content
+  include ../components/header
+  +header('location')
+  main.main(role="main")
+    section.location-head
+      .container-fluid
+        .row
+          .col-12.d-flex.align-items-center
+            .location-head__title
+              .location-head__text-cover.text-cover.text-uppercase
+                p nice
+              .location-head__title-text.title.text-uppercase
+                h2 NICE
+            .location-head__type.type.d-flex
+              .location-head__type-col.type__col.d-flex
+                .type__item
+                  label.type__label
+                    input(type="radio", name="nicehouseType" checked)
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon.type__icon_vill
+                        .type__icon-text
+                          p Villas
+                .type__item
+                  label.type__label
+                    input(type="radio", name="nicehouseType")
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon.type__icon_app
+                        .type__icon-text
+                          p Apartments
+              .location-head__type-col.location-head__type-col_margin.type__col.d-flex
+                .type__item
+                  label.type__label
+                    input(type="radio", name="nicerentType" checked)
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon.type__icon_rent
+                        .type__icon-text
+                          p Rent
+                .type__item
+                  label.type__label
+                    input(type="radio", name="nicerentType")
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon.type__icon_buy
+                        .type__icon-text
+                          p Buy
+              .location-head__type-col.type__col.ml-auto.d-flex
+                .type__item
+                  a(href="location-carousel.html").type__link.type__link_blocks
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon-text.text-center
+                          p
+                            | View
+                            br
+                            | carousel
+                .type__item
+                  a(href="locations.html").type__link.type__link_search
+                    .type__item-wrapp
+                      .type__icon-wrapp
+                        .type__icon-text.text-center
+                          p
+                            | View all
+                            br
+                            | locations
+    section.location-grid
+      .container-fluid
+        .row
+          .col-3.location-grid__col
+            .location-grid__wrapp
+              .location__save
+                a(href="#")
+              a(href="#").location-grid__link
+                .location-grid__head
+                  .location-grid__img
+                    img(src="assets/img/contents/villa.jpg", alt="Image")
+                  .location__label
+                    .location__label-sale.text-uppercase
+                      p for sale
+                  .location__price
+                    p Starts from
+                    p
+                      span.price__start 7000€  
+                      span - 
+                      span.price__end 15.000€ 
+                      | / week
+                .location-grid__body
+                  .location-grid__locaiton.d-flex
+                    .location-grid__locaiton-icon
+                    .location-grid__locaiton-title.text-uppercase
+                      p NICE
+                  .location-grid__desc
+                    p 6-Bed Hidden Villa on a Private Hilltop In Nice
+                .location-grid__footer
+                  ul.location-grid__footer-list.d-flex
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_sqm
+                      .location-grid__footer-item-text.text-center
+                        p 300
+                        p sqm
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bath
+                      .location-grid__footer-item-text.text-center
+                        p 4
+                        p baths
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bed
+                      .location-grid__footer-item-text.text-center
+                        p 6
+                        p beds
+          .col-3.location-grid__col
+            .location-grid__wrapp
+              .location__save
+                a(href="#")
+              a(href="#").location-grid__link
+                .location-grid__head
+                  .location-grid__img
+                    img(src="assets/img/contents/villa.jpg", alt="Image")
+                  .location__label
+                    .location__label-sale.text-uppercase
+                      p for sale
+                  .location__price
+                    p Starts from
+                    p
+                      span.price__start 7000€  
+                      span - 
+                      span.price__end 15.000€ 
+                      | / week
+                .location-grid__body
+                  .location-grid__locaiton.d-flex
+                    .location-grid__locaiton-icon
+                    .location-grid__locaiton-title.text-uppercase
+                      p NICE
+                  .location-grid__desc
+                    p 6-Bed Hidden Villa on a Private Hilltop In Nice
+                .location-grid__footer
+                  ul.location-grid__footer-list.d-flex
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_sqm
+                      .location-grid__footer-item-text.text-center
+                        p 300
+                        p sqm
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bath
+                      .location-grid__footer-item-text.text-center
+                        p 4
+                        p baths
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bed
+                      .location-grid__footer-item-text.text-center
+                        p 6
+                        p beds
+          .col-3.location-grid__col
+            .location-grid__wrapp
+              .location__save
+                a(href="#")
+              a(href="#").location-grid__link
+                .location-grid__head
+                  .location-grid__img
+                    img(src="assets/img/contents/villa.jpg", alt="Image")
+                  .location__label
+                    .location__label-sale.text-uppercase
+                      p for sale
+                  .location__price
+                    p Starts from
+                    p
+                      span.price__start 7000€  
+                      span - 
+                      span.price__end 15.000€ 
+                      | / week
+                .location-grid__body
+                  .location-grid__locaiton.d-flex
+                    .location-grid__locaiton-icon
+                    .location-grid__locaiton-title.text-uppercase
+                      p NICE
+                  .location-grid__desc
+                    p 6-Bed Hidden Villa on a Private Hilltop In Nice
+                .location-grid__footer
+                  ul.location-grid__footer-list.d-flex
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_sqm
+                      .location-grid__footer-item-text.text-center
+                        p 300
+                        p sqm
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bath
+                      .location-grid__footer-item-text.text-center
+                        p 4
+                        p baths
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bed
+                      .location-grid__footer-item-text.text-center
+                        p 6
+                        p beds
+          .col-3.location-grid__col
+            .location-grid__wrapp
+              .location__save
+                a(href="#")
+              a(href="#").location-grid__link
+                .location-grid__head
+                  .location-grid__img
+                    img(src="assets/img/contents/villa.jpg", alt="Image")
+                  .location__label
+                    .location__label-sale.text-uppercase
+                      p for sale
+                  .location__price
+                    p Starts from
+                    p
+                      span.price__start 7000€  
+                      span - 
+                      span.price__end 15.000€ 
+                      | / week
+                .location-grid__body
+                  .location-grid__locaiton.d-flex
+                    .location-grid__locaiton-icon
+                    .location-grid__locaiton-title.text-uppercase
+                      p NICE
+                  .location-grid__desc
+                    p 6-Bed Hidden Villa on a Private Hilltop In Nice
+                .location-grid__footer
+                  ul.location-grid__footer-list.d-flex
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_sqm
+                      .location-grid__footer-item-text.text-center
+                        p 300
+                        p sqm
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bath
+                      .location-grid__footer-item-text.text-center
+                        p 4
+                        p baths
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bed
+                      .location-grid__footer-item-text.text-center
+                        p 6
+                        p beds
+          .col-3.location-grid__col
+            .location-grid__wrapp
+              .location__save
+                a(href="#")
+              a(href="#").location-grid__link
+                .location-grid__head
+                  .location-grid__img
+                    img(src="assets/img/contents/villa.jpg", alt="Image")
+                  .location__label
+                    .location__label-sale.text-uppercase
+                      p for sale
+                  .location__price
+                    p Starts from
+                    p
+                      span.price__start 7000€  
+                      span - 
+                      span.price__end 15.000€ 
+                      | / week
+                .location-grid__body
+                  .location-grid__locaiton.d-flex
+                    .location-grid__locaiton-icon
+                    .location-grid__locaiton-title.text-uppercase
+                      p NICE
+                  .location-grid__desc
+                    p 6-Bed Hidden Villa on a Private Hilltop In Nice
+                .location-grid__footer
+                  ul.location-grid__footer-list.d-flex
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_sqm
+                      .location-grid__footer-item-text.text-center
+                        p 300
+                        p sqm
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bath
+                      .location-grid__footer-item-text.text-center
+                        p 4
+                        p baths
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bed
+                      .location-grid__footer-item-text.text-center
+                        p 6
+                        p beds
+          .col-3.location-grid__col
+            .location-grid__wrapp
+              .location__save
+                a(href="#")
+              a(href="#").location-grid__link
+                .location-grid__head
+                  .location-grid__img
+                    img(src="assets/img/contents/villa.jpg", alt="Image")
+                  .location__label
+                    .location__label-sale.text-uppercase
+                      p for sale
+                  .location__price
+                    p Starts from
+                    p
+                      span.price__start 7000€  
+                      span - 
+                      span.price__end 15.000€ 
+                      | / week
+                .location-grid__body
+                  .location-grid__locaiton.d-flex
+                    .location-grid__locaiton-icon
+                    .location-grid__locaiton-title.text-uppercase
+                      p NICE
+                  .location-grid__desc
+                    p 6-Bed Hidden Villa on a Private Hilltop In Nice
+                .location-grid__footer
+                  ul.location-grid__footer-list.d-flex
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_sqm
+                      .location-grid__footer-item-text.text-center
+                        p 300
+                        p sqm
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bath
+                      .location-grid__footer-item-text.text-center
+                        p 4
+                        p baths
+                    li.location-grid__footer-item
+                      .location-grid__footer-item-icon.location-grid__footer-item-icon_bed
+                      .location-grid__footer-item-text.text-center
+                        p 6
+                        p beds

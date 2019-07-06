@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'montbold_italic';
+  src: url('../fonts/mont-bolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montbook';
+  src: url('../fonts/mont-book-webfont.woff2') format('woff2'),
+       url('../fonts/mont-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montbook_italic';
+  src: url('../fonts/mont-bookitalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-bookitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montextralight';
+  src: url('../fonts/mont-extralight-webfont.woff2') format('woff2'),
+       url('../fonts/mont-extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montextralight_italic';
+  src: url('../fonts/mont-extralightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-extralightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'monthairline';
+  src: url('../fonts/mont-hairline-webfont.woff2') format('woff2'),
+       url('../fonts/mont-hairline-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'monthairline_italic';
+  src: url('../fonts/mont-hairlineitalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-hairlineitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montheavy';
+  src: url('../fonts/mont-heavy-webfont.woff2') format('woff2'),
+       url('../fonts/mont-heavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montheavy_italic';
+  src: url('../fonts/mont-heavyitalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-heavyitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montlight';
+  src: url('../fonts/mont-light-webfont.woff2') format('woff2'),
+       url('../fonts/mont-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montlight_italic';
+  src: url('../fonts/mont-lightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montregular';
+  src: url('../fonts/mont-regular-webfont.woff2') format('woff2'),
+       url('../fonts/mont-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montregular_italic';
+  src: url('../fonts/mont-regularitalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-regularitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montsemibold';
+  src: url('../fonts/mont-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/mont-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montsemibold_italic';
+  src: url('../fonts/mont-semibolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-semibolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montthin';
+  src: url('../fonts/mont-thin-webfont.woff2') format('woff2'),
+       url('../fonts/mont-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montthin_italic';
+  src: url('../fonts/mont-thinitalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-thinitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montblack_italic';
+  src: url('../fonts/mont-blackitalic-webfont.woff2') format('woff2'),
+       url('../fonts/mont-blackitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montbold';
+  src: url('../fonts/mont-bold-webfont.woff2') format('woff2'),
+       url('../fonts/mont-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montblack';
+  src: url('../fonts/mont-black-webfont.woff2') format('woff2'),
+       url('../fonts/mont-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?78195065');
+  src: url('../fonts/fontello.eot?78195065#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?78195065') format('woff2'),
+       url('../fonts/fontello.woff?78195065') format('woff'),
+       url('../fonts/fontello.ttf?78195065') format('truetype'),
+       url('../fonts/fontello.svg?78195065#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+@mixin mont($style : regular){
+  @if $style == regular{
+    font-family: 'montregular' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == boldIt{
+    font-family: 'montbold_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == bold{
+    font-family: 'montbold' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == blak{
+    font-family: 'montblack' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == blakIt{
+    font-family: 'montblack_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == book{
+    font-family: 'montbook' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == bookIt{
+    font-family: 'montbook_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == extraLight{
+    font-family: 'montextralight' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == extraLightIt{
+    font-family: 'montextralight_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == hairline{
+    font-family: 'monthairline' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == hairlineIt{
+    font-family: 'monthairline_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == heavy{
+    font-family: 'montheavy' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == heavyIt{
+    font-family: 'montheavy_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == light{
+    font-family: 'montlight' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == lightIt{
+    font-family: 'montlight_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == regularIt{
+    font-family: 'montregular_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == semibold{
+    font-family: 'montsemibold' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == semiboldIt{
+    font-family: 'montsemibold_italic' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == thin{
+    font-family: 'montthin' ,Arial, Helvetica, sans-serif;
+  }
+  @if $style == thinIt{
+    font-family: 'montthin_italic' ,Arial, Helvetica, sans-serif;
+  }
+}

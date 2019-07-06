@@ -1,0 +1,101 @@
+extends ../main-layout
+
+block variables
+  - 
+    var title = "Team";
+
+block content
+  include ../components/header
+  +header('team')
+  main.main(role="main")
+    section.team
+      .container-fluid
+        .row
+          .col-12
+            ul.team__list.d-flex
+              li.team__item
+                .team__wrapp
+                  .team__avatar
+                    img(src="assets/img/contents/alex.jpg", alt="Image")
+                  .team__about
+                    .team__about-name.text-center
+                      p Alex Adams
+                    .team__about-position.text-center.text-uppercase
+                      p MANAGING DIRECTOR
+                    .team__about-desc
+                      p is a multi-lingual New Zealander who has travelled the world. Having completed his studies in Lausanne, Switzerland, he joined an expanding corporation based in New York, with hotels in Bermuda, Mexico and the Bahamas. Subsequently appointed Director of Marketing for a major International Hotel Group headquartered in London, he discovers the most beautiful locations and most diverse cultures. In central London he created a company dedicated to the rental of elegant, furnished and serviced apartments. The company enjoyed considerable success as an undeniable alternative to luxury hotels.
+                      p In the early 1980s he chose to settle in the South of France and adapted his previous experience to Real Estate on the French Riviera. Participating in the development of the property market for ten years and suffering the collapse in the early 90s, he retained his positive enthusiasm and in 1997, founded the Carlton International, Luxury Real Estate consultancy
+                    .team__about-contact.d-flex
+                      .team__about-contact-links
+                        a(href="tel:+33 1 45 45 32 45") +33 1 45 45 32 45
+                      .team__about-contact-links.team__about-contact-links_margin
+                        a(href="mailto:alex-adams@holidayazur.fr") alex-adams@holidayazur.fr
+                  .team__expand
+                    a(href="#")
+              li.team__item
+                .team__wrapp
+                  .team__avatar
+                    img(src="assets/img/contents/julie.jpg", alt="Image")
+                  .team__about
+                    .team__about-name.text-center
+                      p Julie Sullivan
+                    .team__about-position.text-center.text-uppercase
+                      p CENTRAL RESERVATION
+                    .team__about-desc
+                      p is a multi-lingual New Zealander who has travelled the world. Having completed his studies in Lausanne, Switzerland, he joined an expanding corporation based in New York, with hotels in Bermuda, Mexico and the Bahamas. Subsequently appointed Director of Marketing for a major International Hotel Group headquartered in London, he discovers the most beautiful locations and most diverse cultures. In central London he created a company dedicated to the rental of elegant, furnished and serviced apartments. The company enjoyed considerable success as an undeniable alternative to luxury hotels.
+                    .team__about-contact.d-flex
+                      .team__about-contact-links
+                        a(href="tel:+33 1 45 45 32 45") +33 1 45 45 32 45
+                      .team__about-contact-links.team__about-contact-links_margin
+                        a(href="mailto:alex-adams@holidayazur.fr") alex-adams@holidayazur.fr
+                  .team__expand
+                    a(href="#")
+              li.team__item
+                .team__wrapp
+                  .team__avatar.team__avatar_obj-pos
+                    img(src="assets/img/contents/sara.jpg", alt="Image")
+                  .team__about
+                    .team__about-name.text-center
+                      p Sara Pierce
+                    .team__about-position.text-center.text-uppercase
+                      p PROPERTY CONSULTANT
+                    .team__about-desc
+                      p is a multi-lingual New Zealander who has travelled the world. Having completed his studies in Lausanne, Switzerland, he joined an expanding corporation based in New York, with hotels in Bermuda, Mexico and the Bahamas. Subsequently appointed Director of Marketing for a major International Hotel Group headquartered in London, he discovers the most beautiful locations and most diverse cultures. In central London he created a company dedicated to the rental of elegant, furnished and serviced apartments. The company enjoyed considerable success as an undeniable alternative to luxury hotels.
+                    .team__about-contact.d-flex
+                      .team__about-contact-links
+                        a(href="tel:+33 1 45 45 32 45") +33 1 45 45 32 45
+                      .team__about-contact-links.team__about-contact-links_margin
+                        a(href="mailto:alex-adams@holidayazur.fr") alex-adams@holidayazur.fr
+                  .team__expand
+                    a(href="#")
+              li.team__item
+                .team__wrapp
+                  .team__avatar.team__avatar_obj-pos
+                    img(src="assets/img/contents/4.jpg", alt="Image")
+                  .team__about
+                    .team__about-name.text-center
+                      p Aaron Lynch
+                    .team__about-position.text-center.text-uppercase
+                      p HEAD CONCIERGE FRENCH RIVIERA
+                    .team__about-desc
+                      p is a multi-lingual New Zealander who has travelled the world. Having completed his studies in Lausanne, Switzerland, he joined an expanding corporation based in New York, with hotels in Bermuda, Mexico and the Bahamas. Subsequently appointed Director of Marketing for a major International Hotel Group headquartered in London, he discovers the most beautiful locations and most diverse cultures. In central London he created a company dedicated to the rental of elegant, furnished and serviced apartments. The company enjoyed considerable success as an undeniable alternative to luxury hotels.
+                    .team__about-contact.d-flex
+                      .team__about-contact-links
+                        a(href="tel:+33 1 45 45 32 45") +33 1 45 45 32 45
+                      .team__about-contact-links.team__about-contact-links_margin
+                        a(href="mailto:alex-adams@holidayazur.fr") alex-adams@holidayazur.fr
+                  .team__expand
+                    a(href="#")
+    .team__popup
+      .team__popup-wrapp
+        .team__popup-close
+          a(href="#")
+            span
+            span
+        .team__popup-avatar
+        .team__popup-about
+          .team__popup-about-name
+          .team__popup-about-position
+          .team__popup-about-desc
+            .team__popup-about-desc_bar
+          .team__popup-about-contact

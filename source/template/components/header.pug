@@ -1,0 +1,152 @@
+mixin header(additionClass)
+
+  header(class=`header_${additionClass} header`)
+    .container-fluid
+      .row
+        .col-12.d-flex.align-items-center
+          .header__logo
+            a(href="index.html")
+              img(src="assets/img/logo/logo.svg", alt="Azur logo")
+          nav.header__nav.ml-auto
+            ul.header__nav-list.d-flex
+              li.header__nav-item.header__nav-item_active.text-uppercase
+                a(href="#") home
+              li.header__nav-item.header__nav-item_hover.text-uppercase
+                a(href="#") rent
+                .header__sub-nav
+                  .header__sub-nav-wrapp
+                    ul.header__sub-nav-list.d-flex.justify-content-center
+                      li.header__sub-nav-item.header__sub-nav-item_vill.linear-bg
+                        .header__sub-nav-item-img(style="background-image:url('assets/img/contents/nice.jpg');")
+                        a(href="#").text-center
+                          .header__sub-nav-item-icon
+                          p.text-uppercase VILLAS
+                          p
+                            span - 
+                            span 15 
+                            span - 
+                      li.header__sub-nav-item.header__sub-nav-item_app.linear-bg
+                        .header__sub-nav-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          .header__sub-nav-item-icon
+                          p.text-uppercase APARTMENTS
+                          p
+                            span - 
+                            span 12 
+                            span - 
+                  .header__sub-type.header__sub-type_vill
+                    ul.header__sub-type-list.d-flex.flex-wrap
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/nice-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase nice
+                          p
+                            span - 
+                            span 3
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/monaco.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase moncao
+                          p
+                            span - 
+                            span 5
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase st.tropez
+                          p
+                            span - 
+                            span 3
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase cannes
+                          p
+                            span - 
+                            span 3
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase antibes
+                          p
+                            span - 
+                            span 3
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase valbone
+                          p
+                            span - 
+                            span 3
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase 
+                            | SAINT - JEAN
+                            br
+                            | CAP - FERRAT
+                          p
+                            span - 
+                            span 3
+                            span  -
+                  .header__sub-type.header__sub-type_app
+                    ul.header__sub-type-list.d-flex.flex-wrap
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/nice-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase nice
+                          p
+                            span - 
+                            span 3
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/monaco.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase moncao
+                          p
+                            span - 
+                            span 5
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase st.tropez
+                          p
+                            span - 
+                            span 3
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase cannes
+                          p
+                            span - 
+                            span 3
+                            span  -
+                      li.header__sub-type-item.linear-bg
+                        .header__sub-type-item-img(style="background-image:url('assets/img/contents/room-2.jpg');")
+                        a(href="#").text-center
+                          p.text-uppercase antibes
+                          p
+                            span - 
+                            span 3
+                            span  -
+              li.header__nav-item.text-uppercase
+                a(href="#") buy
+              li.header__nav-item.text-uppercase
+                a(href="#") CONCIERGE SERVICES
+              li.header__nav-item.text-uppercase
+                a(href="team.html") our team
+              li.header__nav-item.text-uppercase
+                a(href="#") contact
+          .header__lang
+            p ENG
+          .header__fav
+            .header__fav-icon
+              a(href="#")
