@@ -13,7 +13,7 @@
     "bootstrap": "^4.3.1",
     "hoek": "^5.0.3",
     "intl-tel-input": "^16.0.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.0",
     "simplebar": "^4.1.0",
     "slick-carousel": "^1.8.1"
